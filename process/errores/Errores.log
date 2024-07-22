@@ -1,0 +1,70 @@
+[2024-07-19 08:51:58] usuario:  | pass:   | formulario: FormLogin 
+[2024-07-19 08:51:59] usuario: salaburuf | pass: 12345678  | pass:$2y$10$I/t9QyyKYRYoC1EgfsCrxeiPufyxhbWMnNfvZzQg3lCuD6JwllZaS
+[2024-07-19 08:51:59] FormLogin- Control Ingreso - Usuario o contraseña incorrectos.
+[2024-07-19 08:53:27] usuario:  | pass:   | formulario: FormLogin 
+[2024-07-19 08:53:27] usuario: admin | pass: 12345  | pass:ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f
+[2024-07-19 08:53:27] FormLogin- Control Ingreso - Usuario o contraseña incorrectos.
+[2024-07-19 09:02:42] usuario:  | pass:   | formulario: FormLogin 
+[2024-07-19 09:02:42] usuario: salaburuf | pass: 12345678  | pass:$2y$10$I/t9QyyKYRYoC1EgfsCrxeiPufyxhbWMnNfvZzQg3lCuD6JwllZaS
+[2024-07-19 09:02:42] FormLogin- Control Ingreso - Usuario o contraseña incorrectos.
+[2024-07-19 09:05:03] RegistracionFrom- El usuario o el email ya están registrados: Usuario: SALABURUH, Email: cualquiera@hotmail.com
+[2024-07-19 09:30:16] RegistracionFrom- El usuario o el email ya están registrados: Usuario: SALABURUH, Email: cualquiera@hotmail.com
+[2024-07-19 09:32:53] usuario:  | pass:   | formulario: FormLogin 
+[2024-07-19 09:32:53] usuario: salaburuh | pass: 12345678  | pass:
+[2024-07-19 09:32:53] usuario: salaburuh | pass: 12345678  | pass:$2y$10$G7N3X1DS6.mnSueZXfSAD.nEMvdmnN8HKYjWTo/eJZVcIkCEB.rJm
+[2024-07-19 09:40:20] usuario:  | pass:   | formulario: FormLogin 
+[2024-07-19 09:40:20] usuario: salaburuh | pass: 12345678  | pass:
+[2024-07-19 09:40:20] usuario: salaburuh | pass: 12345678  | pass:
+[2024-07-19 09:40:20] usuario: salaburuh | pass: 12345678  | pass:$2y$10$G7N3X1DS6.mnSueZXfSAD.nEMvdmnN8HKYjWTo/eJZVcIkCEB.rJm
+[2024-07-19 09:43:01] usuario:  | pass:   | formulario: FormLogin 
+[2024-07-19 09:43:01] usuario: salaburuh | pass: 12345678  | pass:
+[2024-07-19 09:43:01] Resultado: 1
+[2024-07-19 09:43:01] usuario: salaburuh | pass: 12345678  | pass:
+[2024-07-19 09:43:01] usuario: salaburuh | pass: 12345678  | pass:$2y$10$G7N3X1DS6.mnSueZXfSAD.nEMvdmnN8HKYjWTo/eJZVcIkCEB.rJm
+[2024-07-19 09:45:59] usuario:  | pass:   | formulario: FormLogin 
+[2024-07-19 09:45:59] usuario: admin | pass: 123  | pass:
+[2024-07-19 09:45:59] Resultado: 
+[2024-07-19 09:45:59] usuario: admin | pass: 123  | pass:ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f
+[2024-07-19 09:45:59] FormLogin- Control Ingreso - Usuario o contraseña incorrectos.
+[2024-07-19 10:05:07] usuario:  | pass:   | formulario: FormLogin 
+[2024-07-19 10:05:07] usuario: salaburuh  | Resultado: 1
+[2024-07-19 10:05:07] usuario: salaburuh | pass: 12345678  | pass:
+[2024-07-19 10:10:55] usuario:  | pass:   | formulario: FormLogin 
+[2024-07-19 10:10:56] usuario: salaburuh  | Resultado: 1
+[2024-07-19 10:10:56] usuario: salaburuh | pass: 12345678  | pass:
+[2024-07-19 10:12:41] usuario:  | pass:   | formulario: FormLogin 
+[2024-07-19 10:12:41] usuario: salaburuh  | Resultado: 1
+[2024-07-19 10:12:41] usuario: salaburuh | pass: 12345678  | pass:
+[2024-07-19 10:15:47] formulario: FormLogin 
+[2024-07-19 10:15:47] usuario: salaburuh  | Resultado: 1
+[2024-07-19 10:16:53] formulario: FormLogin 
+[2024-07-19 10:16:53] FormLogin- Control Ingreso - Usuario o contraseña incorrectos.
+[2024-07-19 10:18:37] formulario: FormLogin 
+[2024-07-19 10:18:37] usuario: salaburuh  | Resultado: 1
+[2024-07-19 14:54:43] formulario: FormLogin 
+[2024-07-19 14:54:43] usuario: salaburuf  | Resultado: 1
+[2024-07-19 20:50:19] formulario: FormLogin 
+[2024-07-19 20:50:19] usuario: salaburuf  | Resultado: 1
+[2024-07-20 16:06:01] formulario:  
+[2024-07-20 16:41:07] formulario: FormLogin 
+[2024-07-20 16:41:07] usuario: salaburuf  | Resultado: 1
+[2024-07-20 16:41:59] formulario: FormLogin 
+[2024-07-20 16:42:00] usuario: salaburuf  | Resultado: 1
+[2024-07-20 17:06:06] formulario: FormLogin 
+[2024-07-20 17:06:06] usuario: salaburuf  | Resultado: 1
+[2024-07-21 09:03:15] formulario: FormLogin 
+[2024-07-21 09:03:16] usuario: salaburuf  | Resultado: 1
+[2024-07-21 09:04:22] formulario: FormLogin 
+[2024-07-21 09:04:22] FormLogin- Control Ingreso - Usuario o contraseña incorrectos.
+[2024-07-21 09:05:06] formulario: FormLogin 
+[2024-07-21 09:05:06] FormLogin- Control Ingreso - Usuario o contraseña incorrectos.
+[2024-07-21 09:10:03] formulario: FormLogin 
+[2024-07-21 09:10:03] usuario: salaburuf  | Resultado: 1
+[2024-07-21 09:16:43] formulario: FormLogin 
+[2024-07-21 09:16:43] usuario: salaburuf  | Resultado: 1
+[2024-07-21 10:25:45] formulario: FormLogin 
+[2024-07-21 10:25:46] usuario: salaburuf  | Resultado: 1
+[2024-07-21 13:26:28] formulario: FormLogin 
+[2024-07-21 13:26:29] usuario: salaana  | Resultado: 1
+[2024-07-21 13:46:51] formulario: FormLogin 
+[2024-07-21 13:46:51] usuario: salaburuf  | Resultado: 1

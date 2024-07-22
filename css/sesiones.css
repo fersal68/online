@@ -1,0 +1,162 @@
+.zona1 {
+    width: 100%;
+    height: 100vh;
+    background: url(https://mangatschool.com/wp-content/uploads/2021/03/curso-fundamentos-de-programacion-algoritmos.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px; /* Ajusta el padding para que la imagen no quede debajo del menú */
+}
+.zona1-content {
+    position: absolute;
+    top: 430px; /*lo baje al cuadro*/
+    left: 10px;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mayor legibilidad */
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif; /* Cambia la fuente aquí */
+}
+
+.zona1-content h1 {
+    margin-bottom: 10px;
+    font-size: 2em; /* Ajusta el tamaño del título */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente del título */
+}
+
+.zona1-content p {
+    font-size: 1em; /* Ajusta el tamaño del contenido */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente del contenido */
+}
+
+.zona1-content-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .zona1-content {
+        top: 15px;
+        left: 15px;
+        padding: 10px;
+    }
+
+    .zona1-content h1 {
+        font-size: 1.5em;
+    }
+
+    .zona1-content p {
+        font-size: 0.9em;
+    }
+}
+section {
+    padding: 20px;
+    margin-top: 50px; /* Ajusta el margin-top para que no quede debajo del menú */
+    background: url('../fondo.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+    padding-top: 80px; /* Ajuste para que el contenido no quede oculto detrás del menú fijo */
+}
+/* Estilos generales */
+.section-container {
+padding: 20px;
+margin-top: 50px; /* Ajusta el margin-top para que no quede debajo del menú */
+background-size: cover;
+background-position: center center;
+height: calc(100vh - 80px);
+padding-top: 80px; /* Ajuste para que el contenido no quede oculto detrás del menú fijo */
+color: #fff; /* Color del texto */
+}
+
+
+
+
+
+
+h2.text-center {
+    font-family: 'Arial', sans-serif; /* Cambia la fuente aquí */
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: black; 
+}
+h3.text-center {
+    font-family: 'Arial', sans-serif; /* Cambia la fuente aquí */
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: black; 
+}
+
+.info-container p {
+    font-family: 'Arial', sans-serif; /* Cambia la fuente aquí */
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: black; 
+}
+
+ul.d-flex {
+    padding: 0;
+    list-style: none;
+}
+
+.info-link {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.info-link img {
+    width: 190px;  /* Cambia el tamaño de las imagenes */
+    height: auto;
+    transition: transform 0.4s ease;
+}
+
+.info-link img:hover {
+    transform: scale(1.2);
+}
+
+.info-link p {
+    font-family: 'Arial', sans-serif; /* Cambia la fuente aquí */
+    font-size: 1em;
+    text-align: justify;
+    margin-top: 10px;
+    width: 160px; /* Ajuste del ancho del texto */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-content {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .info-link {
+        margin: 10px;
+    }
+
+    .info-link img {
+        width: 100px;
+    }
+
+    .info-link p {
+        width: 100%;
+    }
+
+    ul.d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-link {
+        margin-bottom: 20px;
+    }
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
