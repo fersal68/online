@@ -92,7 +92,7 @@
                                 </div>
                             </div>
                             <div class="col-xs-12">
-                                <p><button type="button" id="RegSubmit"  class="btn btn-primary btn-block btn-raised">Registrarse</button></p>
+                                <p><button type="button" id="RegSubmit"  class="btn btn-primary">Registrarse</button></p>
                             </div>
                         </div>
                     </div>

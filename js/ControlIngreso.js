@@ -66,4 +66,20 @@ $(document).ready(function() {
             }
         });
     });
+    
+ // Alternar visibilidad de la contraseña
+ $(document).on('click', '#togglePassword', function() {
+    var passwordField = $('#password');
+    var passwordToggle = $(this);
+    if (passwordField.attr('type') === 'password') {
+        passwordField.attr('type', 'text');
+        passwordToggle.removeClass('ri-eye-off-fill').addClass('ri-eye-fill');
+    } else {
+        passwordField.attr('type', 'password');
+        passwordToggle.removeClass('ri-eye-fill').addClass('ri-eye-off-fill');
+    }
+});
+
+
+
 });

@@ -1,5 +1,11 @@
 <?php 
-include "config.php";
+
+// Obtener el directorio del archivo actual (sqls.php)
+$dir = __DIR__;
+// Incluir config.php usando la ruta relativa
+require_once $dir . '/../config/config.php';
+
+  //como esta incluido en el menu principal y no precisa
 function conectar() {
     $dsn = MySQL_BASE;
     $username = MySQL_USER;

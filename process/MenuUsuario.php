@@ -1,99 +1,20 @@
+<?php 
+// Obtener el directorio del archivo actual 
+$dir = __DIR__;
+//  usando la ruta relativa
+require_once $dir . '/../SQLs/consultasSQL.php';
+//require_once $dir . '/../SQLs/ConectarSQL.php';
 
-    <style>
+$usuario = $_SESSION['usuario'];
+$sql = "SELECT USUARIO, EMAIL, TELEFONO, DIRECCION, PASSWORD FROM prodes.usuarios WHERE USUARIO = ?";
+$stmt = ejecutarSQL($sql, [$usuario]);
+$user = $stmt->fetch(PDO::FETCH_ASSOC);
 
+/* Convierte los datos del usuario a JSON para pasarlos a JavaScript */
+$userJson = json_encode($user);
+?>
 
-        .menu-user-titulo {
-            text-align: center;
-            margin: 20px 0;
-            font-family: Arial, sans-serif;          
-        }
-
-        .menu-user-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .menu-user-izq,
-        .menu-user-der {
-            width: 90%;
-            margin: 10px 0;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        .menu-user-izq {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .menu-user-item {
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-        }
-
-        .menu-user-item img {
-            width: 40px;
-            height: 40px;
-            margin-right: 10px;
-        }
-
-        .imagen-central {
-            width: 100%;
-            max-width: 200px;
-            height: auto;
-        }
-
-        form div {
-            margin-bottom: 15px;
-        }
-
-        form label {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        form input[type="text"],
-        form input[type="email"],
-        form input[type="password"] {
-            width: 100%;
-            padding: 8px;
-            box-sizing: border-box;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-
-        button[type="submit"] {
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        button[type="submit"]:hover {
-            background-color: #0056b3;
-        }
-
-        @media(min-width: 768px) {
-            .menu-user-container {
-                flex-direction: row;
-                justify-content: center;
-                align-items: flex-start;
-            }
-
-            .menu-user-izq,
-            .menu-user-der {
-                width: 45%;
-                margin: 0 10px;
-            }
-        }
-    </style>
-
-    <div class="menu-user-titulo">
+<div class="menu-user-titulo">
         <h1>Configuración de Usuario</h1>
         <p>Gestiona tu información y preferencias de usuario</p>
     </div>
@@ -115,6 +36,9 @@
     </div>
 
     <script>
+    // Pasa los datos del usuario de PHP a JavaScript
+    const user = <?php echo $userJson; ?>;
+
     function showForm(formType) {
         const menuUserDer = document.getElementById('menu-user-der');
         menuUserDer.innerHTML = '';
@@ -143,6 +67,13 @@
                     <button type="submit">Guardar Cambios</button>
                 </form>
             `;
+
+            // Actualiza los valores de los campos con los datos del usuario
+            document.getElementById('nombre').value = user.USUARIO;
+            document.getElementById('email').value = user.EMAIL;
+            document.getElementById('telefono').value = user.TELEFONO;
+            document.getElementById('direccion').value = user.DIRECCION;
+
         } else if (formType === 'contrasena') {
             menuUserDer.innerHTML = `
                 <h2>Cambiar Contraseña</h2>
@@ -163,6 +94,8 @@
                     <button type="submit">Cambiar Contraseña</button>
                 </form>
             `;
+
+            // Puedes también establecer valores aquí si fuera necesario
         }
     }
     </script>

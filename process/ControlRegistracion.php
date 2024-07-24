@@ -1,9 +1,9 @@
 <?php
-// Incluir los archivos de las clases
-require_once '../SQLs/consultasSQL.php';
-require_once '../SQLs/ConectarSQL.php';
-// Incluir el archivo de conexión
-//session_start(); // Asegúrate de que la sesión esté iniciada 
+// Obtener el directorio del archivo actual 
+$dir = __DIR__;
+//  usando la ruta relativa
+require_once $dir . '/../SQLs/consultasSQL.php';
+//require_once $dir . '/../SQLs/ConectarSQL.php';
 // la funcion de errores se encuentra en consultasSQL.php
 $formulario = clean_string($_POST['formulario']);
 // Verificar si se ha enviado el formulario

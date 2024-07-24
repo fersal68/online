@@ -1,4 +1,6 @@
 <?php 
+$dir = __DIR__;
+require_once $dir . '/../SQLs/ConectarSQL.php';
 
 function logError($message) {
     $date = date('Y-m-d H:i:s');

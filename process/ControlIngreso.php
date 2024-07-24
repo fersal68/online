@@ -1,7 +1,9 @@
 <?php
-// Incluir el archivo de conexión
-require_once '../SQLs/consultasSQL.php';
-require_once '../SQLs/ConectarSQL.php';
+// Obtener el directorio del archivo actual 
+$dir = __DIR__;
+//  usando la ruta relativa
+require_once $dir . '/../SQLs/consultasSQL.php';
+//require_once $dir . '/../SQLs/ConectarSQL.php';
 // viene la informacion del modal de ingreso ---   <div id="loginModalContainer"></div>  
 // mas la funcion js "./js/ControlIngreso.js" --- este abre el modal y manda la informacion a este y devuelve el resultado
 session_start(); // Asegúrate de que la sesión esté iniciada 
