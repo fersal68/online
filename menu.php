@@ -1,5 +1,6 @@
 <?php 
-require_once("./config/config.php");
+$dir = __DIR__;
+require_once $dir . '/config/config.php';
 session_start(); // Asegúrate de que la sesión esté iniciada 
 // Define $sec si no está definido en $_GET
 $sec = isset($_GET['sec']) ? $_GET['sec'] : 'sesiones';

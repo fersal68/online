@@ -10,13 +10,21 @@ $formulario = clean_string($_POST['formulario']);
 if (isset($_POST['formulario']) && $_POST['formulario'] === 'RegistracionFrom') {
     $fecha_hoy = date('Y-m-d');
     // Limpiar los datos de entrada
-    $user = clean_string($_POST['regname']);
+    $user_m = clean_string($_POST['regname']);
     $pass = clean_string(encriptar_password($_POST['regpass']));
-    $nombre = clean_string($_POST['regfullname'] . ' ' . $_POST['reglastname']);
-    $direccion = clean_string($_POST['regdir']);
+    $nombre_m = clean_string($_POST['regfullname'] . ' ' . $_POST['reglastname']);
+    $direccion_m = clean_string($_POST['regdir']);
     $telefono = clean_string($_POST['regphone']);
-    $email = clean_string($_POST['regemail']);
+    $email_m = clean_string($_POST['regemail']);
     $dni = clean_string($_POST['regdni']);
+    // Convertir el dato a minúsculas
+    $user = strtolower($user_m);
+    $direccion = strtolower($direccion_m);
+    $email = strtolower($email_m);
+    $data_lowercase = strtolower($nombre_m);
+    // Convertir la primera letra de cada palabra a mayúsculas
+    $nombre = ucwords($data_lowercase);
+
     // Verificar si las variables no están vacías
     if (!empty($dni) && !empty($nombre) && !empty($telefono) && !empty($email) && !empty($direccion) && !empty($user) && !empty($pass)) {
         // Verificar si el usuario o el email ya existen // quite por ahora el control de mail, solo lo hace por usuario
